@@ -1,13 +1,5 @@
-#This is the document where I learned introductory R
-x = 1     #this doesn't execute
-y = x*2   #this is dependent upon x
-z = y^2   #this is dependent upon x and y
-x+y+z     *if you can change x or y to a character or logical 
-it won't work     
-rm()      #removes variables
-cat filename  this is similar to the less command
-*Every time you make a change, you must do the git add and git 
-commit commands!*
-This is the Bash way of tacking changes - something I do in 
-Word
-mass
+How to create a new data frame, cbind, rbind
+df = data.frame(first_name="Denise", last_name="Bronner", age=28, stringsAsFactors = F)
+df = rbind(df, list(c("Jane", "Mary", "Rose", "Lisa"), c("White", "Williams", "Mason", "Simpsons"), c(34, 27, 45, 33)))
+df = cbind(df, confused = c("YES", "NO", "NO", "YES", "MAYBE"))
+df
